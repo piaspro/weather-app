@@ -11,7 +11,7 @@ body{
 .container{
 text-align: center;
 }
-form.example input[type=text] {
+div.example input[type=text] {
     margin-top: 50px;
     padding: 10px;
     font-size: 17px;
@@ -21,7 +21,7 @@ form.example input[type=text] {
     background: #f1f1f1;
     border-radius: 10px 0px 0px 10px;
   }
-  form.example button {
+  div.example button {
     margin-top: 50px;
     float: left;
     width: 20%;
@@ -35,16 +35,23 @@ form.example input[type=text] {
     border-radius: 0px 10px 10px 0px;
   }
   
-  form.example button:hover {
+  div.example button:hover {
     background: #0b7dda;
   }
   
-  form.example::after {
+  div.example::after {
     content: "";
     clear: both;
     display: table;
   }
   .temp{
-      padding-top: 50px;
       color: white;
+  }
+  #temp{
+      font-size: 60px;
+      font-weight: bold;
+      text-shadow: 1px 5px rgb(59, 59, 59);
+  }
+  #real-feel, #condition{
+    text-shadow: 1px 2px rgb(59, 59, 59);
   }

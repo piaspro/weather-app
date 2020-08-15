@@ -11,17 +11,21 @@
 <body>
     <div class="container">
         <div class="search-bar">
-            <form class="example"style="margin:auto;max-width:400px">
-                <input type="text" placeholder="Search..City">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <div class="example"style="margin:auto;max-width:400px">
+                <input class="input" type="text" placeholder="Search..City">
+                <button class="btn" type="button"><i class="fa fa-search"></i></button>
+            </div>
         </div>
-          
+        <div><img id="img" src="http://openweathermap.org/img/wn/02d@2x.png" alt="..."></div>
         <div class="temp">
-            <h1 id="location" >Location</h1>
-            <h1>20c</h1>
+            <h1 id="location" ><i class="fa fa-map-marker" style="font-size:36px;color:red"></i> Dhaka, BD</h1>
+            <h1 id="temp" >30°c</h1>
+            <h4 id="condition" >Hot</h4>
+            <h3 id="real-feel" >Real_feel: 32°c</h3>
         </div>
     </div>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
