@@ -22,6 +22,9 @@ function getResults(value){
 }
 // Show result
 function showResult(data) {
+    const flag = document.getElementById("img_flag");
+    flag.innerHTML =`<img src="flag-img/${data.sys.country.toLowerCase()}.png" alt="...">`;
+
     const location = document.getElementById("location");
     location.innerHTML = ` <i class="fa fa-map-marker" style="font-size:36px;color:red"></i> ${data.name} ${data.sys.country}`;
 
@@ -34,7 +37,9 @@ function showResult(data) {
     const condition = document.getElementById("condition");
     condition.innerText = `${(data.weather[0].main)}`;
     
-    const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const image = document.getElementById("img");
-    image.setAttribute('src', iconUrl);
+    image.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+
+    const temperature_min_max = document.getElementById("min_max");
+    temperature_min_max.innerHTML = `${Math.round(data.main.temp_min)} <span>°c</span>/${Math.round(data.main.temp_max)} <span>°c</span>`;
 }
