@@ -14,7 +14,7 @@ btn.addEventListener('click', function(){
 });
 // fetch data
 function getResults(value){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=53f5bcb9ee8e03a33c85f46690b4267c`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&APPID=53f5bcb9ee8e03a33c85f46690b4267c`)
     .then(response => response.json())
     .then (data => {
         showResult(data);
@@ -38,7 +38,7 @@ function showResult(data) {
     condition.innerText = `${(data.weather[0].main)}`;
     
     const image = document.getElementById("img");
-    image.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    image.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
 
     const temperature_min_max = document.getElementById("min_max");
     temperature_min_max.innerHTML = `${Math.round(data.main.temp_min)} <span>°c</span>/${Math.round(data.main.temp_max)} <span>°c</span>`;
