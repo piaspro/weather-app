@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(weather.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+text-align: center;
+}
+form.example input[type=text] {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 10px 0px 0px 10px;
+  }
+  form.example button {
+    margin-top: 50px;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #cf0257;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .temp{
+      padding-top: 50px;
+      color: white;
+  }
